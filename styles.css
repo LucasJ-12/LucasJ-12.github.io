@@ -1,37 +1,47 @@
-body 
- background: tan; 
- font-family: Arial, Helvetica, 
- sans-serif; 
-} 
-h1 { 
-    color: brown; text-align: center; 
-} 
+body {
+    background: tan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
 .projects { 
-    display:flex; 
-    flex-wrap:wrap; } 
-/* chat gbt */ 
-.sketch-row { 
     display: flex; 
-    gap: 10px; 
-    width: 100%; } 
-.sketch-row img { 
-    width: 50%; height: 
-    auto; object-fit: 
-    contain; border-radius: 10px; } 
-/* chatgbt */ 
-.project { 
-    width: 30%; 
-    margin: 10px; 
-    padding: 20px; 
-    background: maroon; 
-    border-radius: 20px; 
-    box-sizing: border-box; 
-    display: flex; flex-direction: 
-    column; align-items: 
-    stretch; } 
-/* chatgbt */ 
-.project p { 
-    color: white; 
-    margin-top: 10px; 
+    flex-wrap: wrap; 
+}
+
+/* Sketch images side-by-side */
+.sketch-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.sketch-row img {
+    width: 50%;
+    height: 180px;      /* FIX: keeps bubble neat */
+    object-fit: cover;  /* crops cleanly instead of stretching */
+    border-radius: 10px;
+}
+
+/* Project bubbles */
+.project {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: maroon;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Project text */
+.project p {
+    color: white;
+    margin-top: 10px;
     line-height: 1.3;
- }
+}
