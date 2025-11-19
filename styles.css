@@ -22,27 +22,20 @@ h1 {
     object-fit: contain;
     border-radius: 10px;
 }
+/* chatgbt */
 .project {
     width: 30%;
     margin: 10px;
     padding: 20px;
     background: maroon;
     border-radius: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 /* chatgbt */
 .project p {
     color: white;
     margin-top: 10px;
     line-height: 1.3;
-}
-/* chatgbt */
-.project img {
-    width: 100%;            
-    height: auto;           
-    border-radius: 20px;    
-    display: block;         
-    object-fit: cover;      
 }
