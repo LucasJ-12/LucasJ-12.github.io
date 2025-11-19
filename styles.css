@@ -36,7 +36,7 @@ h1 {
 }
 /* chatgbt */
 .project {
-    width: 30%;
+    flex: 1 1 300px;  
     margin: 10px;
     padding: 20px;
     background: maroon;
