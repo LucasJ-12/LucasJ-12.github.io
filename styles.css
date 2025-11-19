@@ -78,9 +78,9 @@ a:hover {
 /* --- Main Sections --- */
 .about, .skills, .projects, .contact {
   max-width: 900px;
-  margin: 0 auto 40px auto;
+  margin: 0 0 40px 0; /* remove auto to align left */
   padding: 0 10px;
-  text-align: left;
+  text-align: left; /* force left alignment */
 }
 
 /* --- Responsive --- */
@@ -95,6 +95,6 @@ a:hover {
   }
 
   .about, .skills, .projects, .contact {
-    text-align: center;
+    text-align: left; /* still left on mobile */
   }
 }
