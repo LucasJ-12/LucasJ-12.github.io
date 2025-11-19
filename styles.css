@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Center Name (h1) --- */
+/* --- Center Name --- */
 h1 {
   background: brown;
   color: white;
@@ -21,14 +21,14 @@ h1 {
   font-size: 3em;
   text-align: center;
   margin-bottom: 40px;
+  border-radius: 0 0 20px 20px;
 }
 
 /* --- Main Content Sections --- */
 .about, .skills, .projects, .contact {
   max-width: 900px;
-  margin: 0 0 40px 0; /* content aligned left */
+  margin: 0 0 40px 0;
   padding: 0 20px;
-  text-align: left;
 }
 
 /* Section headings */
@@ -37,23 +37,31 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Project headings */
+/* Project Headings */
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* --- Images --- */
-section img, .projects img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 15px;
-  margin: 15px 0;
-  object-fit: cover;
+/* --- Project Bubbles --- */
+.project {
+  background: maroon;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* --- Sketches Row --- */
+/* --- Images --- */
+.project img, .sketch-row img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+/* --- Sketch Row --- */
 .sketch-row {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +71,6 @@ section img, .projects img {
 .sketch-row img {
   flex: 1 1 calc(50% - 10px);
   height: 200px;
-  border-radius: 15px;
 }
 
 /* --- Links --- */
