@@ -10,7 +10,7 @@ h1 {
     display:flex; 
     flex-wrap:wrap; 
 } 
-.sketch-row {
+.sketch-row { /* chatgbt */
     display: flex;
     gap: 10px;
 }
