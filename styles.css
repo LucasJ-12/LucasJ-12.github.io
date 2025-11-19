@@ -59,11 +59,11 @@ h2 {
 }
 
 .sketch-row img {
-  flex: 1 1 calc(50% - 15px);
-  height: auto;           
-  max-height: 350px;      
+  flex: 1 1 calc(50% - 15px); /* side by side on desktop */
+  max-width: 100%;
+  height: auto;               /* allow full height */
   border-radius: 15px;
-  object-fit: contain;     
+  object-fit: contain;        /* show entire image */
 }
 
 /* --- Links --- */
