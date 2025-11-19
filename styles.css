@@ -10,15 +10,17 @@ h1 {
     display:flex; 
     flex-wrap:wrap; 
 } 
-.sketch-row { /* chatgbt */
+/* chat gbt */
+.sketch-row {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 .sketch-row img {
     width: 50%;
     height: auto;
-    border-radius: 10px;
     object-fit: contain;
+    border-radius: 10px;
 }
 .project {
     width: 30%;
