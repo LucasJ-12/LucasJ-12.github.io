@@ -11,18 +11,23 @@ h1 {
     flex-wrap:wrap; 
 } 
 /* chat gbt */
-.sketch-row {
-    display: flex;          
-    flex-wrap: wrap;        
-    justify-content: space-between; 
-}
-
 .sketch-row img {
-    width: calc(50% - 5px); 
-    height: 180px;          
-    object-fit: cover;       
+    width: calc(50% - 10px);  
+    height: 180px;             
+    object-fit: cover;         
     border-radius: 10px;
-    margin-bottom: 10px;     
+}
+.sketch-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .sketch-row img {
+        width: 100%;   
+        height: auto;  
+    }
 }
 /* chatgbt */
 .project {
