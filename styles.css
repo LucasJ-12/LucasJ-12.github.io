@@ -10,8 +10,8 @@ body {
   line-height: 1.6;
 }
 
-/* --- Centered Name --- */
-header {
+/* --- Center Name (h1) --- */
+h1 {
   background: brown;
   color: white;
   height: 50vh;
@@ -20,27 +20,31 @@ header {
   align-items: center;
   font-size: 3em;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-/* --- Main Content (Left Aligned) --- */
-main {
+/* --- Main Content Sections --- */
+.about, .skills, .projects, .contact {
   max-width: 900px;
-  margin: 40px 0 40px 0;
+  margin: 0 0 40px 0; /* content aligned left */
   padding: 0 20px;
   text-align: left;
 }
 
-section {
-  margin-bottom: 60px;
-}
-
-section h2 {
+/* Section headings */
+h2 {
   color: brown;
   margin-bottom: 20px;
 }
 
+/* Project headings */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /* --- Images --- */
-section img {
+section img, .projects img {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -49,7 +53,7 @@ section img {
   object-fit: cover;
 }
 
-/* --- Sketches --- */
+/* --- Sketches Row --- */
 .sketch-row {
   display: flex;
   flex-wrap: wrap;
@@ -60,14 +64,6 @@ section img {
   flex: 1 1 calc(50% - 10px);
   height: 200px;
   border-radius: 15px;
-}
-
-/* --- Footer --- */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: brown;
-  color: white;
 }
 
 /* --- Links --- */
@@ -81,8 +77,9 @@ a:hover {
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
-  main {
+  .about, .skills, .projects, .contact {
     text-align: center;
+    margin: 0 auto 40px auto;
   }
 
   .sketch-row {
