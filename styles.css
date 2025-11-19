@@ -11,22 +11,27 @@ h1 {
     flex-wrap:wrap; 
 } 
 /* chat gbt */
+.sketch-row {
+    display: flex;                /* side by side layout */
+    flex-wrap: wrap;              /* wrap on small screens */
+    gap: 15px;                    /* space between sketches */
+    justify-content: center;      /* center if not full row */
+}
+
+/* Sketch images only */
 .sketch-row img {
-    width: calc(50% - 10px);  
-    height: 180px;             
-    object-fit: cover;         
+    flex: 0 1 calc(50% - 15px);   /* half row minus gap */
+    max-width: 100%;               /* never exceed container */
+    height: 250px;                 /* taller, adjust as needed */
+    object-fit: cover;             /* fill box neatly */
     border-radius: 10px;
 }
-.sketch-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
+
+/* Responsive on mobile */
 @media (max-width: 600px) {
     .sketch-row img {
-        width: 100%;   
-        height: auto;  
+        flex: 0 1 100%;           /* full width */
+        height: auto;             /* maintain ratio */
     }
 }
 /* chatgbt */
