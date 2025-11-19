@@ -26,6 +26,17 @@ margin: 10px;
 padding: 20px 10px;
 background: maroon; /* pick a color */
 border-radius: 20%;
+ box-sizing: border-box; 
+overflow: hidden;       
+display: flex;
+flex-direction: column;
+}
+/* chatgbt */
+.project p {
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-top: 10px;
 }
 /* chatgbt */
 .project img {
