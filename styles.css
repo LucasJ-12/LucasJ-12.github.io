@@ -60,10 +60,10 @@ h2 {
 
 .sketch-row img {
   flex: 1 1 calc(50% - 15px); /* side by side on desktop */
-  max-width: 100%;
-  height: auto;               /* allow full height */
+  min-width: 200px;            /* prevent images from shrinking too small */
+  height: auto;                /* allow natural height */
   border-radius: 15px;
-  object-fit: contain;        /* show entire image */
+  object-fit: contain;         /* show full image without cutting */
 }
 
 /* --- Links --- */
