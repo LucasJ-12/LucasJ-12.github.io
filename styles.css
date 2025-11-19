@@ -21,22 +21,20 @@ h1 {
     object-fit: contain;
 }
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: maroon; /* pick a color */
-border-radius: 20%;
- box-sizing: border-box; 
-overflow: hidden;       
-display: flex;
-flex-direction: column;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: maroon;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 /* chatgbt */
 .project p {
     color: white;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
     margin-top: 10px;
+    line-height: 1.3;
 }
 /* chatgbt */
 .project img {
