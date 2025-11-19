@@ -13,14 +13,16 @@ h1 {
 /* chat gbt */
 .sketch-row {
     display: flex;          
-    flex-wrap: wrap;       
-    gap: 10px;              
+    flex-wrap: wrap;        
+    justify-content: space-between; 
 }
+
 .sketch-row img {
-    flex: 1 1 48%;          
+    width: calc(50% - 5px); 
     height: 180px;          
-    object-fit: cover;      
+    object-fit: cover;       
     border-radius: 10px;
+    margin-bottom: 10px;     
 }
 /* chatgbt */
 .project {
