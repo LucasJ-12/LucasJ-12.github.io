@@ -60,9 +60,10 @@ h2 {
 
 .sketch-row img {
   flex: 1 1 calc(50% - 15px);
-  height: 200px;
+  height: auto;           
+  max-height: 350px;      
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: contain;     
 }
 
 /* --- Links --- */
