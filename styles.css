@@ -17,3 +17,11 @@ padding: 20px 10px;
 background: maroon; /* pick a color */
 border-radius: 25%;
 }
+/* chatgbt */
+.project img {
+    width: 100%;            
+    height: auto;           
+    border-radius: 20px;    
+    display: block;         
+    object-fit: cover;      
+}
