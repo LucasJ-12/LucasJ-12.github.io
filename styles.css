@@ -14,7 +14,6 @@ h1 {
     display: flex;
     gap: 10px;
 }
-
 .sketch-row img {
     width: 50%;
     height: auto;
