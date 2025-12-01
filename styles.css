@@ -1,4 +1,3 @@
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,7 @@ body {
   color: #333;
   line-height: 1.5;
   padding: 20px;
-  max-width: 1100px;  /* keeps layout centered and removes massive horizontal space */
+  max-width: 1100px;  
   margin: auto;
 }
 
@@ -21,7 +20,7 @@ h1 {
   text-align: center;
   color: brown;
   font-size: 2.5em;
-  margin-bottom: 25px;    /* smaller spacing */
+  margin-bottom: 25px;    
 }
 
 /* --- Section Headings --- */
@@ -32,17 +31,17 @@ h2 {
 
 /* --- Sections (About, Skills, Projects, Contact) --- */
 .about, .skills, .projects, .contact {
-  margin-bottom: 25px;     /* reduce vertical gaps */
+  margin-bottom: 25px;     
   padding: 0 10px;
 }
 
 /* --- Project container --- */
-.project {
+.project { /*chatgbt*/
   background: maroon;
   color: black;
   border-radius: 15px;
-  padding: 15px;            /* smaller content padding */
-  margin-bottom: 20px;      /* reduced gap between projects */
+  padding: 15px;            
+  margin-bottom: 20px;      
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -52,25 +51,25 @@ h2 {
 }
 
 /* Images */
-.project img {
+.project img { /*chatgbt*/
   width: 100%;
-  max-width: 325px;         /* smaller image = less vertical dead space */
+  max-width: 325px;         
   border-radius: 12px;
   margin: 8px 0;
   object-fit: cover;
 }
 
 /* Sketch layout */
-.sketch-row {
+.sketch-row { /*chatgbt*/
   display: flex;
   gap: 10px;
   margin-top: 8px;
 }
 
-.sketch-row img {
+.sketch-row img { /*chatgbt*/
   flex: 1;
   min-width: 160px;
-  max-height: 350px;        /* reduced height */
+  max-height: 350px;        
   border-radius: 12px;
   object-fit: contain;
 }
@@ -86,7 +85,7 @@ a:hover {
 }
 
 /* Responsive tweaks */
-@media (max-width: 600px) {
+@media (max-width: 600px) {  /*chatgbt*/
   .sketch-row {
     flex-direction: column;
   }
